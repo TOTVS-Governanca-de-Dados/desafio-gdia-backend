@@ -1,4 +1,4 @@
-# Desafio Técnico – Analista de Dados Júnior (Backend Python)
+# Desafio Técnico – DATA ENGINEER JR (Backend Python)
 
 ## 🎯 Objetivo
 
