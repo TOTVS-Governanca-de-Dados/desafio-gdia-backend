@@ -94,29 +94,30 @@ Siga abaixo o passo a passo para rodar o arquivo Notebook.ipynb no VSCode:
 2. Abra o terminal dentro dessa pasta e executar o seguinte código: git clone https://github.com/lcfjunior00/desafio-gdia-backend.git
 
 
-3. Crie um ambiente virtual na pasta principal do projeto e depois ative-o e baixe as bibliotecas que estão em requirements.txt 
+3. Crie um ambiente virtual na pasta principal do projeto e depois ative-o e baixe as bibliotecas que estão em requirements.txt
+
+4. Pressione ctrl + shift + p e selecione o interpretador python do ambiente virtual que você criou anteriormente.
+
+5. Gere chave API no kaggle:
+
+    5.1. Vá até o site kaggle.com e acesse seu perfil.
+
+    5.2. No canto superior direito, clique na bolinha com a foto do seu perfil.
+
+    5.3. Clique em settings.
+
+    5.4. Menu API, clica em "Create New Token".
+
+    5.5. Será baixado um arquivo chamado kaggle.json
 
 
-4. Gere chave API no kaggle:
-
-    4.1. Vá até o site kaggle.com e acesse seu perfil.
-
-    4.2. No canto superior direito, clique na bolinha com a foto do seu perfil.
-
-    4.3. Clique em settings.
-
-    4.4. Menu API, clica em "Create New Token".
-
-    4.5. Será baixado um arquivo chamado kaggle.json
+6. Pegue as informações de username e key no arquivo kaggle.json e preencha o arquivo .env.example. Em seguida, renomeie o arquivo para .env
 
 
-5. Pegue as informações de username e key no arquivo kaggle.json e preencha o arquivo .env.example. Em seguida, renomeie o arquivo para .env
+    6.1. É importante lembrar que o arquivo .venv e .env não deve ser versionado. (confira se o arquivo .venv e  .env está em .gitignore)
 
 
-    5.1. É importante lembrar que o arquivo .venv e .env não deve ser versionado. (confira se o arquivo .venv e  .env está em .gitignore)
+7. Certifique-se de ter instalado na sua máquina a extensão Jupyter para o VSCode.
 
 
-6. Certifique-se de ter instalado na sua máquina a extensão Jupyter para o VSCode.
-
-
-7. Em seguida, execute o arquivo Notebook.ipynb
+8. Em seguida, execute o arquivo Notebook.ipynb
