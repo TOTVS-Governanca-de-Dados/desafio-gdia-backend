@@ -113,7 +113,7 @@ Siga abaixo o passo a passo para rodar o arquivo Notebook.ipynb no VSCode:
 5. Pegue as informações de username e key no arquivo kaggle.json e preencha o arquivo .env.example. Em seguida, renomeie o arquivo para .env
 
 
-    5.1. É importante lembrar que o arquivo .venv não deve ser versionado. (confira se o arquivo .venv está em .gitignore)
+    5.1. É importante lembrar que o arquivo .venv e .env não deve ser versionado. (confira se o arquivo .venv e  .env está em .gitignore)
 
 
 6. Certifique-se de ter instalado na sua máquina a extensão Jupyter para o VSCode.
