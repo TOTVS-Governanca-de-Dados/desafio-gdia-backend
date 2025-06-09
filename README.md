@@ -95,15 +95,15 @@ Siga abaixo o passo a passo para rodar o arquivo Notebook.ipynb no VSCode:
 
 4. Gere chave API no kaggle:
 
-4.1. Vá até o site kaggle.com e acesse seu perfil.
+    4.1. Vá até o site kaggle.com e acesse seu perfil.
 
-4.2. No canto superior direito, clique na bolinha com a foto do seu perfil.
+    4.2. No canto superior direito, clique na bolinha com a foto do seu perfil.
 
-4.3. Clique em settings.
+    4.3. Clique em settings.
 
-4.4. Menu API, clica em "Create New Token".
+    4.4. Menu API, clica em "Create New Token".
 
-4.5. Será baixado um arquivo chamado kaggle.json
+    4.5. Será baixado um arquivo chamado kaggle.json
 
 5. Pegue as informações de username e key no arquivo kaggle.json e preencha o arquivo .env.example. Em seguida, renomeie o arquivo para .env
 
