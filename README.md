@@ -91,20 +91,7 @@ Siga abaixo o passo a passo para rodar o arquivo Notebook.ipynb no VSCode:
 
 2. Abra o terminal dentro dessa pasta e executar o seguinte código: git clone https://github.com/lcfjunior00/desafio-gdia-backend.git
 
-3. Crie um ambiente virtual na pasta principal do projeto 
-(
-    executar:
-    python -m venv venv # Qualquer sistema operacional
-
-    e depois:
-    venv\Scripts\activate #Windows
-    ou
-    source venv/bin/activate  # Linux/macOS
-) 
-e baixar as bibliotecas que estão em requirements.txt 
-(
-    pip install -r requirements.txt
-)
+3. Crie um ambiente virtual na pasta principal do projeto e depois ative-o e baixe as bibliotecas que estão em requirements.txt 
 
 4. Gere chave API no kaggle:
 
