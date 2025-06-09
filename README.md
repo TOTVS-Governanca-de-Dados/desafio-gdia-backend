@@ -61,27 +61,27 @@ Boa sorte! 🍀
 
 ## Decisões de Código:
 
-1. A Utilização de variáveis de ambiente KAGGLE_USERNAME e KAGGLE_KEY foi uma decisão técnica adotada como boa prática de segurança para evitar o vazamento das chaves no repositório.
+* A Utilização de variáveis de ambiente KAGGLE_USERNAME e KAGGLE_KEY foi uma decisão técnica adotada como boa prática de segurança para evitar o vazamento das chaves no repositório.
 
-2. Utilização de biblioteca DuckDB ao invés de pandas como forma de melhorar a performance das consultas ao banco de dados.
+* Utilização de biblioteca DuckDB ao invés de pandas como forma de melhorar a performance das consultas ao banco de dados.
 
-3. Utilização de funções como execute_query (que executa qualquer query SQL) para evitar repetições de código.
+* Utilização de funções como execute_query (que executa qualquer query SQL) para evitar repetições de código.
 
-4. Utilização de DocStrings e tipagem de argumentos em funções para melhorar a documentação do código.
+* Utilização de DocStrings e tipagem de argumentos em funções para melhorar a documentação do código.
 
 ## Decisões de Machine Learning:
 
-1. Remoção das features PassangerId, Name e Ticket pois não possuem poder preditivo considerando a definição do dicionário de dados.
+* Remoção das features PassangerId, Name e Ticket pois não possuem poder preditivo considerando a definição do dicionário de dados.
 
-2. Valores nulos em Age foram tratados com a média da PClass em que o passageiro pertencia pois as médias de idade em cada classe eram bem diferentes.
+* Valores nulos em Age foram tratados com a média da PClass em que o passageiro pertencia pois as médias de idade em cada classe eram bem diferentes.
 
-3. Coluna Cabin removido pois apresentava 77% de dados nulos. O tratamento desses dados poderia resultar em uma distribuição muito distorcida de realidade e assim levar o modelo à conclusões erradas.
+* Coluna Cabin removido pois apresentava 77% de dados nulos. O tratamento desses dados poderia resultar em uma distribuição muito distorcida de realidade e assim levar o modelo à conclusões erradas.
 
-4. Os valores nulos em Embarked são dados faltantes e por isso somente as linhas com dados nulos nessa feature foram removidas.
+* Os valores nulos em Embarked são dados faltantes e por isso somente as linhas com dados nulos nessa feature foram removidas.
 
-5. Utilização de correlações estatísticas para verificar se há relações lineares.
+* Utilização de correlações estatísticas para verificar se há relações lineares.
 
-6. Uma feature (PClass) possuia correlação próxima de forte e por isso realizei experimento com regressão logística.
+* Uma feature (PClass) possuia correlação próxima de forte e por isso realizei experimento com regressão logística.
 
 
 # Instruções de uso:
@@ -89,7 +89,7 @@ Siga abaixo o passo a passo para rodar o arquivo Notebook.ipynb no VSCode:
 
 1. Abra uma pasta onde deseja clonar o repositório.
 
-2. Abra o terminal dentro dessa pasta e executar o seguinte código: git clone https://github.com/TOTVS-Governanca-de-Dados/desafio-gdia-backend.git
+2. Abra o terminal dentro dessa pasta e executar o seguinte código: git clone https://github.com/lcfjunior00/desafio-gdia-backend.git
 
 3. Crie um ambiente virtual na pasta principal do projeto 
 (
