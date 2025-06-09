@@ -54,3 +54,70 @@ Além do domínio técnico, buscamos alguém que saiba se comunicar bem com dife
 *\*3 dias corridos\*\* após o envio deste desafio. Caso termina antes, ficamos disponíveis para falar ok? 
 
 Boa sorte! 🍀
+
+
+# Explicações de decisões técnicas:
+
+
+## Decisões de Código:
+
+* A Utilização de variáveis de ambiente KAGGLE_USERNAME e KAGGLE_KEY foi uma decisão técnica adotada como boa prática de segurança para evitar o vazamento das chaves no repositório.
+
+* Utilização de biblioteca DuckDB ao invés de pandas como forma de melhorar a performance das consultas ao banco de dados.
+
+* Utilização de funções como execute_query (que executa qualquer query SQL) para evitar repetições de código.
+
+* Utilização de DocStrings e tipagem de argumentos em funções para melhorar a documentação do código.
+
+## Decisões de Machine Learning:
+
+* Remoção das features PassangerId, Name e Ticket pois não possuem poder preditivo considerando a definição do dicionário de dados.
+
+* Valores nulos em Age foram tratados com a média da PClass em que o passageiro pertencia pois as médias de idade em cada classe eram bem diferentes.
+
+* Coluna Cabin removido pois apresentava 77% de dados nulos. O tratamento desses dados poderia resultar em uma distribuição muito distorcida de realidade e assim levar o modelo à conclusões erradas.
+
+* Os valores nulos em Embarked são dados faltantes e por isso somente as linhas com dados nulos nessa feature foram removidas.
+
+* Utilização de correlações estatísticas para verificar se há relações lineares.
+
+* Uma feature (PClass) possuia correlação próxima de forte e por isso realizei experimento com regressão logística.
+
+
+# Instruções de uso:
+Siga abaixo o passo a passo para rodar o arquivo Notebook.ipynb no VSCode:
+
+
+1. Abra uma pasta onde deseja clonar o repositório.
+
+
+2. Abra o terminal dentro dessa pasta e executar o seguinte código: git clone https://github.com/lcfjunior00/desafio-gdia-backend.git
+
+
+3. Crie um ambiente virtual na pasta principal do projeto e depois ative-o e baixe as bibliotecas que estão em requirements.txt
+
+4. Pressione ctrl + shift + p e selecione o interpretador python do ambiente virtual que você criou anteriormente.
+
+5. Gere chave API no kaggle:
+
+    5.1. Vá até o site kaggle.com e acesse seu perfil.
+
+    5.2. No canto superior direito, clique na bolinha com a foto do seu perfil.
+
+    5.3. Clique em settings.
+
+    5.4. Menu API, clica em "Create New Token".
+
+    5.5. Será baixado um arquivo chamado kaggle.json
+
+
+6. Pegue as informações de username e key no arquivo kaggle.json e preencha o arquivo .env.example. Em seguida, renomeie o arquivo para .env
+
+
+    6.1. É importante lembrar que o arquivo .venv e .env não deve ser versionado. (confira se o arquivo .venv e  .env está em .gitignore)
+
+
+7. Certifique-se de ter instalado na sua máquina a extensão Jupyter para o VSCode.
+
+
+8. Em seguida, execute o arquivo Notebook.ipynb
